@@ -1,0 +1,78 @@
+// description of game
+
+I am going to create a game of "number-Guessing" . It will be a single player game. the user is going to select the level of difficulty(1-3) and then going to enter the random number from 1-100 with limited amount of lives.There would be instruction screen for the Game. On each guess the user will be informed if there guess number is either 'too low' or too high.Number of lives remaining will be shown at bottom. The lower the difficulty the higher are the lives. if the haven't guessed right number the game will be over and shows the Game-Over message.
+
+// design statement
+
+- CSS of the game will include the sunny side themed, with summer toned colours like skyBlue as background. and there will be use of font pack from google. The use of red colour for game-over . and green colour for each right guess. the game will be of size of webpage 1024Px x 768Px.
+
+// A play-by-play description of the user experience .
+
+- Game starts with a welcome screen that require to enter user-name, then difficulty level- i.e. 
+            level 1 - 7 guess attempt
+            level 2 - 5 guess attempt
+            level 3 - 4 guess attempt
+- game begins screen with the player name and welcome! message.
+- There would be instruction screen as well how to Play the Game.
+- User enter the number if right then the green message box with " congratulation! you cleared the level".
+or the game over message with red box " out of lives". user will also see the number of lives remaining.
+
+// A list of the user actions
+- enter player name.
+- choose difficulty level.
+- Read the instruction screen.
+- input the random numbers in the box with limited amount of attempts.
+- submit the guess! 
+- quit the game or restart Game with button on top right corner.
+
+// A list of the system actions (functions)
+
+
+- Capture and store the player name.
+- Capture the difficulty level.
+- Switch from welcome screen to game instruction screen and then the Game itself.
+- Level completed to not completed screen.
+- System check from the function each time player write the number.
+
+// play by play user experience-anticipated variables:
+
+- Number guessing game welcome screen
+- Enter the player name
+- Difficulty level select
+- Instruction on how to play the Game.
+- Game starts and there are option on top right to quit or restart the game.
+- Player enter number and a hint screen with too high or too low will be shown. and number of lives remaining will be shown.
+- If player is right then green message box with " congratulation! you cleared the level". 
+- The game over message with red box " out of lives".
+- Screen goes with play again or quit message.
+
+// The individual elements of the game will be 
+
+- title number guessing game
+- with audio on background with new sound tags within the function. 
+- submit button sound as well will be linked.
+- h1 tag with the player namer and number guessing name
+- adding buttons playerName, difficultyLevel , GuessNumber,submitGuess ,  playAgain and Quit.
+
+- background image and try using this.try to  make a sound whenever right guess.
+
+// functionality Javascript
+
+
+- Create const variables first that we will declare later in the functions. like high-low,guesses,Guessbutton,etc.
+- Create a variable for randonNumber and assign the value from 1 to 100 using math floor and math random functionality.
+- Create a guess function to check the user input by using the if-else conditions.
+if guess == randonNumber
+else 
+     if guess< randonNumber
+     else if guess> randonNumber
+
+- Adding event listener of click like storing scores and player name.
+ if user cant guess within remaining attempts then game over screen that will disable the submit and guess number fields we can call it as Game-over function.
+
+ - Function to reset the game and start it again .
+
+
+
+
+

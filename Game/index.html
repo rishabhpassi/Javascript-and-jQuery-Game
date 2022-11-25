@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HI-LOW GAME</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/dark-hive/jquery-ui.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="title"></h1>
+        
+        <div id="instruction-dailog" class="buton">
+            <div id="dialog-example" title="INSTRUCTIONS:"></div>
+            <button id="dialog-opener" class="btn btn-info">HELP</button>
+
+        </div>
+        <div id="player-name">
+
+        </div>
+    </header>
+
+    <div id="main">
+        <main class="content-area">
+            <div id="splash-screen" class="screen">
+                <h2>HI-LOW GAME</h2>
+                <img src="./media/animal-2027043_1280.png" alt="fre" id="monster">
+                <p>Welcome to the adventure!</p>
+                <p>Away from village there is one monster that captured the innocent people.Cheif we need help from you to unlock the password for the cage.Please save our lives chief!</p>
+                <button type="button" class="btn btn-primary" id="start-button">Start-Game</button>
+                <audio src="./media/intro-sound.wav" id="intro-bg-audio" ></audio> 
+                      
+            </div>
+            <div id="game-screen" class="screen">
+                <h2>LETS START!!</h2>
+                <p>What can we call you Cheif :)</p>
+                <input type="text"  name="player-name-input" id="player-name-input" required>
+                <audio src="./media/play-button-sound.wav" id="bg-audio" loop ></audio>
+            
+                <section class="levels">
+                    <p>&#128121; DEVIL:- HOHAHAHA, LETS SEE HOW MUCH ABILITY YOU GOT?</p>
+                    <button type="button" id="easy-level" class="btn btn-secondary">EASY</button>
+                    <button type="button" id="medium-level" class="btn btn-success">MEDIUM</button>
+                    <button type="button" id="hard-level" class="btn btn-danger">HARD</button>
+                </section>
+                <button type="button" class="btn btn-primary" id="game-join"> LETS GO!</button>
+            </div>
+            <div id="play-game" class="screen">
+                <h3> &#128121; WELCOME TO DEVIL'S WORLD &#128121;</h3>
+                <button type="button" class="btn btn-danger" id="end-game">End-Game</button>
+                <button type="button" class="btn btn-primary" id="play-pause"> play</button>
+            
+                    <br><br> Cheif-Name:
+                    <div id="display-name"></div>
+                    <br/>
+                    Score:
+                    <div id="player-score">0</div>
+                    Lives Remaining:
+                    <div id="player-lives">0</div>
+
+                    <div id="game-board" style="display: none">
+                        <h4>Guess a number between 0 and 100</h4>
+                        <input type="number" id="player-guess" />
+                        <br><button id="submit-guess">Submit Guess</button>
+                        <section id="messages"></section>
+                        <section id="hello">Previous Guess are - <span id="previousGuess"> </span> </section>
+                        <audio src="./media/win-sound.wav" id="win-sound"></audio>
+                        <audio src="./media/game-over.wav" id="game-over"></audio>
+                                           
+                </div>
+            </div>
+           
+            
+            <div id="gameover-screen" class="screen">
+                <h2>Game over</h2>
+                <p>choose one of the option below:</p>
+                <button type="button" class="btn btn-secondary" id="restart-game">Play again </button>
+                
+                <button type="button" class="btn btn-dark" id="finish-game">Quit</button>
+            </div>
+        </main>
+       
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+ 
+</body>
+</html>

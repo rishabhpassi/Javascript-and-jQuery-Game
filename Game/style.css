@@ -1,0 +1,85 @@
+
+
+h1{
+    color: white;
+}
+body{
+  background-image: url(./media/hd-wallpaper-2675322_1920.jpg);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+  }
+  
+  main {
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    overflow: hidden;
+    margin: 0 auto;
+    background: rgb(167, 167, 255);
+    font-family: 'Press Start 2P', cursive;
+    
+
+   
+
+  }
+header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+        background-image: url(./media/hd-wallpaper-2675322_1920.jpg);
+    }
+
+
+
+  .screen h2{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(0, 0, 0); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(40,end),
+    blink-caret .75s infinite ;
+    text-align: center;
+    padding: 1rem;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  .screen{
+    text-align: center;
+    padding: 2rem;
+  }
+  .levels{
+    margin: 1rem;
+  }
+  #game-board{
+    text-align: center;
+    padding: 2rem;
+
+  }
+  img#monster{
+    width: 10rem;
+    height: 10rem;
+
+  }
+  @media screen  and (max-width:590px) {
+    main{
+      width: auto;
+      
+      
+    }
+    
+  }
+  
